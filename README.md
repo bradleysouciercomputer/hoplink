@@ -21,7 +21,7 @@ The app is preconfigured for the dedicated Hoplink Supabase project. From the re
 python -m http.server 8000
 ```
 
-Then open http://localhost:8000. You can also deploy the static site to GitHub Pages or another static web host.
+Then open http://localhost:8000. A GitHub Actions workflow in `.github/workflows/deploy-pages.yml` deploys the root directory to GitHub Pages on pushes to `main`. The expected site URL is `https://bradleysouciercomputer.github.io/hoplink/` after the first deployment succeeds.
 
 ## Supabase
 
