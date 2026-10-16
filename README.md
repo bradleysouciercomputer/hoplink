@@ -21,7 +21,7 @@ The app is preconfigured for the dedicated Hoplink Supabase project. From the re
 python -m http.server 8000
 ```
 
-Then open http://localhost:8000. A GitHub Actions workflow in `.github/workflows/deploy-pages.yml` deploys the root directory to GitHub Pages on pushes to `main`. The expected site URL is `https://bradleysouciercomputer.github.io/hoplink/` after the first deployment succeeds.
+Then open http://localhost:8000. One-time publishing setup: open repository **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, then open **Actions** and re-run the latest `Deploy Hoplink to GitHub Pages` workflow. The GitHub Actions API for this connection cannot enable the Pages site automatically. After that, pushes to `main` will deploy the root directory. The expected site URL is `https://bradleysouciercomputer.github.io/hoplink/`.
 
 ## Supabase
 
